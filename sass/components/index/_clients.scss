@@ -1,0 +1,35 @@
+.logos {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients {
+    margin-bottom: 50px;
+
+    &__item:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.clients__logos {
+    display: inline-flex;
+    width: 170px;
+    height: 92px;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--main-border-radius);
+    border: 1px solid var(--socialnet-sleep-color);
+    fill: var(--socialnet-sleep-color);
+    transition-property: border-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        border-color: var(--animation-color);
+        fill: var(--animation-color);
+    }
+}
+
+
+

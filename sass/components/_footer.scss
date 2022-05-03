@@ -1,0 +1,70 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: var(--background-main-color);
+}
+
+.box {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-contacts {
+    margin-right: 70px;
+
+    &__logo {
+        margin-bottom: 20px;
+    }
+    
+    &__list {
+        flex-direction: column;
+        padding-left: 0;
+        list-style-type: none;
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 9px;
+    }
+}
+
+
+
+.footer-social {
+    margin-top: 12px;
+    margin-right: 93px;
+
+    & .social-list__icon {
+        fill: var(--secondary-color);
+    }
+}
+
+.btm {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+
+.form {
+    display: flex;
+    position: relative;
+    align-items: center;
+
+    &__input {
+        width: 358px;
+        height: 50px;
+        padding-left: 16px;
+        margin-right: 12px;
+        outline: none;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: var(--main-border-radius);
+        color: rgba(255, 255, 255, 0.3);
+        background-color: var(--background-main-color);
+    
+    }
+    
+    &__icon {
+        margin-left: 10px;
+    }
+
+}
+

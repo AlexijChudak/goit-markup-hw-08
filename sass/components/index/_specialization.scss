@@ -1,0 +1,47 @@
+.specialization {
+    padding-bottom: 94px;
+
+    &__title {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    
+    &__list {
+        width: 370px;
+        margin-right: 30px;
+    }
+    
+    &__list:nth-child(3n) {
+        margin-right: 0;
+    }
+           
+    &__item {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    &__item-bgr {
+        display: inline-flex;
+        position: absolute;
+        content: "";
+        width: 370px;
+        height: 70px;
+        bottom: 0;
+        background-color: var(--background-main-color);
+        opacity: 0.8;
+    }
+    
+    &__item-text {
+        display: block;
+        position: absolute;
+        font-weight: 700;
+        bottom: 27px;
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+        color: var(--secondary-color);
+    }
+}
+
