@@ -16,4 +16,10 @@
         color: var(--secondary-color);
     }
    
+    @media screen and (max-width: 1199px) {
+        width: 134px;
+        font-size: 24px;
+        line-height: 1.17;
+     
+}
 }

@@ -10,30 +10,65 @@ p {
 .page {
     font-family: var(--main-font-family), sans-serif;
     letter-spacing: var(--main-letter-spacing);
+    margin-left: auto;
+    margin-right: auto;
 
     color: var(--main-text-color);
 }
 
 .section {
     padding-bottom: 94px;
+
+    @media screen and (max-width: 1199px) {
+         padding-bottom: 60px;
+    }
+   
 }
 
 .list {
-    display: flex;
+   
     padding-left: 0;
     list-style-type: none;
+
+    @media screen and (min-width: 480px) {
+        display: block;
+    }
+    
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+      
 }
 
-.container {
-    width: 1200px;
+.container {    
     padding-left: 15px;
     padding-right: 15px;
     margin-right: auto;
     margin-left: auto;
+
+    @media screen  and (min-width: 480px) { 
+        width: 480px;        
+    }
+
+    @media screen and (min-width: 768px) {        
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {       
+       width: 1200px;
+    }
 }
 
 .item:not(:last-child) {
-    margin-right: 50px;
+
+    @media screen and (min-width: 768px) {
+        margin-right: 0x;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        margin-right: 50px;
+    }
+    
 }
 
 .title {

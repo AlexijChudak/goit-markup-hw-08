@@ -37,9 +37,15 @@
                             </svg>+38 096 111 11 11
                          </a>
                     </li>
-                </ul>
-            </div>
-        
+                </ul>  
+                <div class="header__button-menu">              
+                <button class="header__button" type="button">
+                    <svg class="header__menu" width="40" height="40">
+                        <use href="./images/icons.svg#icon-menu_40px"></use>
+                    </svg>
+                </button> 
+                </div>
+            </div>        
         </div>
     </header>
     <!-- Content of page -->
@@ -98,22 +104,22 @@
         <section class="section specialization">
             <div class="container">
                 <h2 class="specialization__title title">Чем мы занимаемся</h2>
-                <ul class="list">
-                    <li class="specialization__list">
+                <ul class="specialization_list list">
+                    <li class="specialization__card">
                         <div class="specialization__item">
                             <p class="specialization__item-bgr"></p>
                             <img class="image" src="./images/box/boxone.jpg" alt="Мы создаем проект" width="370" />
                             <p class="specialization__item-text">Десктопные приложения</p>
                         </div>
                     </li>
-                    <li class="specialization__list">
+                    <li class="specialization__card">
                         <div class="specialization__item">
                             <p class="specialization__item-bgr"></p>
                             <img class="image" src="./images/box/boxtwo.jpg" alt="Мы адаптируем проект" width="370" />
                             <p class="specialization__item-text">Мобильные приложения</p>
                         </div>
                     </li>
-                    <li class="specialization__list">
+                    <li class="specialization__card">
                         <div class="specialization__item">
                             <p class="specialization__item-bgr"></p>
                             <img class="image" src="./images/box/boxthree.jpg" alt="Мы смотрим результат" width="370" />
@@ -126,7 +132,7 @@
         <section class="team section">
             <div class="container">
                 <h2 class="team__title title">Наша команда</h2>
-                <ul class="list">
+                <ul class="team__list list">
                     <li class="team__item">
                         <img class="team__image image" src="./images/team/teamcardone.jpg" alt="Игорь Демьяненко" width="270" />
                         <div class="team__card">
@@ -250,7 +256,7 @@
         <section class="section logos">            
             <div class="container">
                 <h2 class="clients title">Постоянные клиенты</h2>
-                <ul class="list">
+                <ul class="clients__list list">
                     <li class="clients__item"><a class="clients__logos" href="" target="_blank" rel="noopener nofollowed" aria-label="client-one">
                         <svg  width="106" height="60">
                             <use href="./images/icons.svg#icon-logo"></use>
@@ -394,5 +400,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+
 </body>
 </html>
